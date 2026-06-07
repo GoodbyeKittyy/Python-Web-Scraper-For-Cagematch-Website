@@ -37,7 +37,13 @@ python scraper.py --cli --output out.xlsx --min-rating 8.0
 2. Optionally change **Min Rating** (default: 8.00)
 3. Click **🔄 Fetch Promotions**
 
+<img width="2556" height="1351" alt="image" src="https://github.com/user-attachments/assets/570cd70d-f346-4219-94b8-a7177702230e" />
+
+
 The app navigates to `cagematch.net/?id=8&view=promotions&sortby=colRating&sorttype=DESC` and pages through results, stopping once ratings drop below your threshold.
+
+
+
 
 Each promotion appears in a checklist:
 
@@ -51,6 +57,7 @@ Each promotion appears in a checklist:
 
 After loading, a confirmation dialog shows how many promotions were found and how many are selected, before the browser proceeds to scrape match data.
 
+<img width="2558" height="1352" alt="image" src="https://github.com/user-attachments/assets/ed7f4e35-06e8-4226-bd76-80454e347776" />
 ---
 
 ### Step 2 — Filters & Export
@@ -64,6 +71,9 @@ Go to **Step 2 · Filters & Export** and configure:
 | Min WON | Decimal stars | `4.5` (= 4.5★ or more) |
 | Min Match Rating | Decimal | `8.00` |
 
+<img width="2558" height="1352" alt="image" src="https://github.com/user-attachments/assets/7e1354a2-6190-430b-99ea-15bf8dcaec29" />
+
+
 Click **⚡ Scrape Selected & Export to Excel**.
 
 The scraper makes **two passes** per promotion:
@@ -75,6 +85,7 @@ This dual-pass approach means you won't miss highly-rated Meltzer matches that h
 ---
 
 ### Output Excel Workbook
+<img width="2558" height="1352" alt="image" src="https://github.com/user-attachments/assets/f58403da-3856-4d77-b99d-e3661af993f1" />
 
 - **One sheet per promotion** (named after the promotion, truncated to 31 characters per Excel's limit)
 - Columns: `Date` · `Match Fixture` (hyperlinked to the match page) · `WON Rating` · `Rating`
@@ -90,6 +101,7 @@ This dual-pass approach means you won't miss highly-rated Meltzer matches that h
 ### Log Tab
 
 A live log panel shows real-time progress: every URL fetched, page number, qualifying match count, and any errors or retries.
+<img width="2558" height="470" alt="image" src="https://github.com/user-attachments/assets/6f9ad6e4-93c4-4952-b282-838969a0fa6e" />
 
 ---
 
